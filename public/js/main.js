@@ -1,10 +1,51 @@
 $(document).ready(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    let panels = gsap.utils.toArray("section");
+    let tops = panels.map(panel => ScrollTrigger.create({trigger: panel, start: "top top"}));
+    ScrollTrigger.normalizeScroll(true)
+    panels.forEach((panel, i) => {
+        ScrollTrigger.create({
+            trigger: panel,
+            start: () => {
+                return panel.offsetHeight < window.innerHeight ? "top top" : "bottom bottom"
+            },
+            pin: true, 
+            pinSpacing: false 
+        });
+    });
+
+    ScrollTrigger.create({
+    snap: {
+        snapTo: (progress, self) => {
+        let panelStarts = tops.map(st => st.start),
+            snapScroll = gsap.utils.snap(panelStarts, self.scroll());
+        return gsap.utils.normalize(0, ScrollTrigger.maxScroll(window), snapScroll);
+        },
+        duration: 0.5
+    }
+    });
+
+    $('#resume').click(() => {
+        downloadElement();
+    });
+
     const content = new SplitType('.content');
-    let tl = gsap.timeline({repeat: 0});
-    // tl.set(".seperator", { opacity: 0 })
-    tl.to(".char", {y:0, stagger: 0.05, delay:0.2,duration: 0.1 })
-    tl.fromTo(".seperator", { opacity: 0 }, { duration: 0.75, opacity: 1,color: "DE847B" })
-    tl.from(".large-text", { y: 0, duration: 0.5 })
-    tl.to(".large-text", { backgroundColor: "#B95C50", color: "#3B0404", duration: 0.5 })
-    // tl.fromTo('#menu', { x: -100 }, { x: 0, duration: 0.5 })
 })
+
+function downloadElement() {
+    let link = document.createElement('a');
+    link.setAttribute('type', 'hidden');
+    link.href = 'assets/file/Profile.pdf';
+    link.download = "gokul_deep.pdf";
+    link.target = "_blank";
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+}
+
+function handleDownloadButton(ev){
+    const resumeBtn = document.getElementById("resume");
+    resumeBtn.style.visibility = window.scrollY > 3 ? "hidden": "visible";
+}
+window.onscroll=handleDownloadButton;
