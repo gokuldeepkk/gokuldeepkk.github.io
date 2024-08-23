@@ -29,8 +29,6 @@ $(document).ready(() => {
     $('#resume').click(() => {
         downloadElement();
     });
-
-    const content = new SplitType('.content');
 })
 
 function downloadElement() {

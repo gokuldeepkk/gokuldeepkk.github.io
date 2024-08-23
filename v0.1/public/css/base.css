@@ -67,12 +67,26 @@ section {
 
 .content {
     font-style: var(--secondary-font);
-    font-size: 10rem;
-    line-height: 8rem;
+    font-size: 8rem;
+    line-height: 7rem;
+}
+
+.content .highlight {
+    display: none;
+}
+.content .normal {
+    display: block;
 }
 
 .content:hover {
-    text-shadow: 2px 2px 2px var(--highlight);
+    background-color: var(--highlight);
+    color: var(--dark);
+}
+.content:hover .highlight {
+    display: block;
+}
+.content:hover .normal {
+    display: none;
 }
 
 .btn-container {
@@ -98,19 +112,6 @@ section {
     background-color: var(--highlight);
     border: 3px solid var(--highlight);
     cursor: pointer;
-}
-
-.img-container {
-    height: max-content !important;
-    position: relative;
-}
-
-.img-container .img {
-    padding: 2%;
-}
-
-.img img {
-    height: 50vh;
 }
 
 .about {
