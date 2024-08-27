@@ -1,0 +1,15 @@
+@use 'colors';
+
+.text-container {
+    margin: 0 auto;
+    color: colors.$light;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Nunito Sans";
+    z-index: 1;
+}
+
+.landing {
+    background-color: colors.$dark;
+    min-width: 100vw;
+}
