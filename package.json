@@ -1,12 +1,14 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "homepage": "https://github.com/gokuldeepkk/gokuldeepkk.github.io.git",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --output-path=docs --base-href=/gokuldeepkk.github.io/",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng deploy --repo=https://github.com/gokuldeepkk/gokuldeepkk.github.io.git --name=\"gokuldeepkk\" --email=gokuldeep41@gmail.com --base-href=/gokuldeepkk.github.io/"
   },
   "private": true,
   "dependencies": {
