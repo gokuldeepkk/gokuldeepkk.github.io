@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { SkillComponent } from './skill/skill.component';
 
 @Component({
   selector: 'profile',
   standalone: true,
-  imports: [],
+  imports: [SkillComponent],
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.scss'
 })

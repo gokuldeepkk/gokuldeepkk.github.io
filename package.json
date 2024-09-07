@@ -8,7 +8,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --repo=https://github.com/gokuldeepkk/gokuldeepkk.github.io.git --name=\"gokuldeepkk\" --email=gokuldeep41@gmail.com --base-href=/gokuldeepkk.github.io/"
+    "deploy": "ng deploy --repo=https://github.com/gokuldeepkk/gokuldeepkk.github.io.git --name=\"gokuldeepkk\" --email=gokuldeep41@gmail.com"
   },
   "private": true,
   "dependencies": {

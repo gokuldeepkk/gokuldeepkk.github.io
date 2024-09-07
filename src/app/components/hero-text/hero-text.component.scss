@@ -13,3 +13,18 @@
     background-color: colors.$dark;
     min-width: 100vw;
 }
+
+.hero-btn {
+    padding: 1em;
+    background: transparent;
+    color: colors.$light;
+    border: 2px solid colors.$light;
+    cursor: none;
+
+    &:hover {
+        background: colors.$highlight;
+        color: colors.$dark;
+        font-weight: 600;
+        border-color: colors.$highlight;
+    }
+}
