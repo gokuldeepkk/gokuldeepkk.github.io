@@ -1,5 +1,5 @@
 import { Component, Input, SimpleChanges } from '@angular/core';
-import { IMAGE_ASSET } from '../../../commons/constants';
+import { IMAGE_ASSET } from '@shared/constants';
 
 @Component({
   selector: 'skill',
