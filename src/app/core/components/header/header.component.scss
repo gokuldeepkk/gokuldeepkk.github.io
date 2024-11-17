@@ -1,7 +1,22 @@
+@use 'colors';
+
 header {
     position: fixed;
+    width: 100%;
+    text-align: end;
 
     ul {
         list-style: none;
+    }
+
+    li {
+        display: inline;
+        font-size: 1.25rem;
+        margin-right: 1rem;
+        color: colors.$light;
+
+        &:hover {
+            color: colors.$highlight;
+        }
     }
 }
