@@ -5,6 +5,11 @@ header {
     width: 100%;
     text-align: end;
 
+    .menu-container {
+        max-width: 1152px;
+        margin: 0 auto;
+    }
+
     ul {
         list-style: none;
     }
@@ -14,9 +19,14 @@ header {
         font-size: 1.25rem;
         margin-right: 1rem;
         color: colors.$light;
+        box-sizing: border-box;
 
-        &:hover {
-            color: colors.$highlight;
+        span {
+            padding: 5px 10px;
+
+            &:hover {
+                border-bottom: 2px solid colors.$highlight;
+            }
         }
     }
 }
