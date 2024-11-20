@@ -4,14 +4,17 @@ header {
     position: fixed;
     width: 100%;
     text-align: end;
+    height: 3rem;
 
     .menu-container {
         max-width: 1152px;
-        margin: 0 auto;
+        margin-top: 1.5rem;
     }
 
     ul {
         list-style: none;
+        margin: auto 0;
+        height: 24px;
     }
 
     li {
@@ -20,12 +23,31 @@ header {
         margin-right: 1rem;
         color: colors.$light;
         box-sizing: border-box;
+        display: inline-block;
+        height: 24px;
 
         span {
+            width: fit-content;
             padding: 5px 10px;
 
+            &::after {
+                content: '';
+                display: block;
+                position: relative;
+                margin: auto;
+                height: 2px;
+                left: 5px;
+                transform: scaleX(0);
+                background-color: transparent;
+                transition: transform 0.25s ease-out;
+            }
+    
             &:hover {
-                border-bottom: 2px solid colors.$highlight;
+                transform-origin: bottom center;
+                &::after {
+                    transform: scaleX(1);
+                    background-color: colors.$highlight;
+                }
             }
         }
     }

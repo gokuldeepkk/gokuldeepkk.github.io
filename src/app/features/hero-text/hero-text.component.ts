@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { IMAGE_ASSET } from '@shared/constants';
 
 @Component({
   selector: 'app-hero-text',
@@ -9,6 +10,7 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
   styleUrl: './hero-text.component.scss'
 })
 export class HeroTextComponent {
+  downloadIconPath = IMAGE_ASSET + '/download-icon.svg';
   // @ViewChild('heroText') heroText!: ElementRef;
   // @HostListener('document:mousemove', ['$event'])
   // mouseMove(event: any) {
