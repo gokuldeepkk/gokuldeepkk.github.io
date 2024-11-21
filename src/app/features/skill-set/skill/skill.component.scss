@@ -1,22 +1,11 @@
 @use "colors";
 
-// .skill {
-//     background-color: colors.$base;
-//     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-//     width: 100px;
-//     height: 100px;
-
-//     .skill-name {
-//         text-align: center;
-//         top: 50%;
-//     }
-// }
-$size: 125px;
+$size: 100px;
 
 .skill {
   width: $size;
   height: $size;
-  border-radius: 50%;
+  border-radius: 0.75rem;
   background: linear-gradient(colors.$base 0 0) var(--p,0)/var(--p,0) no-repeat;
   position: relative;
   transition: .4s,background-position 0s;
@@ -28,13 +17,13 @@ $size: 125px;
     justify-content: center;
 
     .skill-title {
-      display: none;
+      display: block;
     }
 
     .skill-logo {
       height: 100%;
       align-items: center;
-      display: flex;
+      display: none;
       img {
         height: 75%;
       }
@@ -52,10 +41,10 @@ $size: 125px;
     }
     .skill-name {
       .skill-title {
-        display: block;
+        display: none;
       }
       .skill-logo {
-        display: none;
+        display: flex;
       }
     }
   }

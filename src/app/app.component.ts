@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { HeroTextComponent } from "@features/hero-text/hero-text.component";
 import { ProfileComponent } from '@features/profile/profile.component';
 import { HeaderComponent } from "@core/components/header/header.component";
+import { SkillSetComponent } from "./features/skill-set/skill-set.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeroTextComponent, ProfileComponent, HeaderComponent],
+  imports: [RouterOutlet, HeroTextComponent, ProfileComponent, HeaderComponent, SkillSetComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

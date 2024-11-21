@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SkillComponent } from './skill/skill.component';
+import { SkillComponent } from '../skill-set/skill/skill.component';
 
 @Component({
   selector: 'profile',

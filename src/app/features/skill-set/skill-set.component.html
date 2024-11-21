@@ -1,0 +1,10 @@
+<section class="skill-set">
+    <div class="skill-board">
+        <div *ngFor="let skill of skills" class="category">
+            <h2>{{skill.category}}</h2>
+            <ul>
+                <li *ngFor="let item of skill.list">{{item}}</li>
+            </ul>
+        </div>
+    </div>
+</section>
