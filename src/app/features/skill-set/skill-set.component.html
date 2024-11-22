@@ -2,6 +2,7 @@
     <div class="skill-board">
         <div *ngFor="let skill of skills" class="category">
             <h2>{{skill.category}}</h2>
+            <img [src]="skill.image" [alt]="skill.category" class="category-img" />
             <ul>
                 <li *ngFor="let item of skill.list">{{item}}</li>
             </ul>

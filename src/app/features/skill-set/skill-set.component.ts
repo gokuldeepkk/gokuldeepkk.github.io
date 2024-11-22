@@ -11,12 +11,19 @@ import { Component } from '@angular/core';
 export class SkillSetComponent {
   skills = [
     {
-      category: 'FRONT END',
+      category: 'FRONTEND',
       list: ['HTML5', 'SCSS', 'JS/JQuery', 'Angular', 'Bootstrap'],
+      image: '/images/frontend.png'
     },
     {
-      category: 'BACK END',
-      list: ['NodeJS', 'Express']
+      category: 'BACKEND',
+      list: ['NodeJS', 'Express'],
+      image: '/images/backend.png'
+    },
+    {
+      category: 'TOOLS',
+      list: ['Github', 'Bamboo', 'Jest'],
+      image: '/images/tools.png'
     }
   ];
 }
