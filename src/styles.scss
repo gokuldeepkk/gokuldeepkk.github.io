@@ -15,7 +15,31 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100vh;
     max-height: 100vh;
     font-family: "Nunito Sans";
+}
+
+.section-title {
+    color: colors.$base;
+    &::after {
+        content: '';
+        display: block;
+        position: relative;
+        margin: auto;
+        height: 2px;
+        left: 5px;
+        transform: scaleX(0);
+        background-color: transparent;
+        transition: transform 0.25s ease-out;
+    }
+
+    &:hover {
+        transform-origin: bottom center;
+        &::after {
+            transform: scaleX(1);
+            background-color: colors.$highlight;
+        }
+    }
 }

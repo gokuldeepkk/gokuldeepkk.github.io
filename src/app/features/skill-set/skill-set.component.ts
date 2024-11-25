@@ -17,12 +17,12 @@ export class SkillSetComponent {
     },
     {
       category: 'BACKEND',
-      list: ['NodeJS', 'Express'],
+      list: ['NodeJS', 'Express', 'MongoDB', 'Python', 'Java'],
       image: '/images/backend.png'
     },
     {
       category: 'TOOLS',
-      list: ['Github', 'Bamboo', 'Jest'],
+      list: ['Github', 'Bamboo', 'Jest', 'TypeScript', 'Docker', 'Figma'],
       image: '/images/tools.png'
     }
   ];

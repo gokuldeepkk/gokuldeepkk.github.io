@@ -1,0 +1,22 @@
+<section class="experience-sect">
+  <h1 class="section-title">Experience Timeline</h1>
+  <div class="timeline">
+    <div class="experience" *ngFor="let experience of experiences">
+      <!-- (mouseenter)="onHover(experience)"
+      (mouseleave)="hideCard()" -->
+      <span class="time-period">{{ experience.timeline }}</span>
+      <div class="exp-desc">
+        <div class="details">
+          <h2>{{ experience?.company }}</h2>
+          <h3>{{ experience?.designation }}</h3>
+          <p>{{ experience?.description }}</p>
+        </div>
+        <div class="skills">
+          <span class="skill" *ngFor="let item of experience.skills">
+            {{ item }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

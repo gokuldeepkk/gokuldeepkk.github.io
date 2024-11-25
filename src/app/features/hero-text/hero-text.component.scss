@@ -12,7 +12,14 @@
         font-size: 1.5rem;
         text-transform: capitalize;
         line-height: 2rem;
+        color: colors.$highlight;
         font-weight: 400;
+    }
+
+    .description {
+        font-size: 0.8rem;
+        font-style: oblique;
+        font-family: colors.$secondary-font;
     }
 }
 

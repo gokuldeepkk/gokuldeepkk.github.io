@@ -1,0 +1,91 @@
+@use "colors";
+
+.timeline {
+  min-width: 1152px;
+  margin: 0 auto;
+}
+
+.experience {
+  border-bottom: 2px solid;
+  border-image: linear-gradient(
+      to right,
+      colors.$midtone 0%,
+      colors.$midtone 40%,
+      transparent 100%
+    )
+    1;
+  padding: 2rem 1rem;
+
+  .time-period {
+    color: colors.$base;
+    font-weight: 400;
+  }
+
+  .exp-desc {
+    position: absolute;
+    width: 30%;
+    left: 30%;
+    background-color: colors.$midtone;
+    text-align: center;
+    display: none;
+    z-index: 2;
+
+    .details {
+      flex-grow: 1;
+      width: 70%;
+      padding: 1rem;
+      h2 {
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        margin: 6px 0;
+      }
+
+      h3 {
+        font-style: italic;
+        color: colors.$highlight;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        margin: 6px 0;
+      }
+
+      p {
+        text-align: left;
+        font-size: 0.8rem;
+      }
+    }
+
+    .skills {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      gap: 8px;
+      width: 30%;
+      background: colors.$base;
+      padding: 1rem;
+
+      .skill {
+        background: transparent;
+        // border: 2px solid colors.$dark;
+        font-weight: 700;
+        color: colors.$dark;
+        padding: 0.5rem 1rem;
+
+        &:hover {
+          border-bottom: 1px solid colors.$highlight;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .exp-desc {
+      display: flex;
+    }
+
+    .time-period {
+      font-weight: 700;
+    }
+  }
+}

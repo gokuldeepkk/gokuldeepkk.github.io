@@ -1,20 +1,22 @@
 @use "colors";
 
 .main {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: auto;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 #circular-cursor {
-    background-color: transparent;
-    border:1px solid colors.$light;    
-    height:24px;
-    width:24px;
-    border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    position: absolute;
-    z-index: 1;
+  background-color: transparent;
+  border: 1px solid colors.$light;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  position: absolute;
+  z-index: 3;
 }
