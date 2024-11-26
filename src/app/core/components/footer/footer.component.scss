@@ -1,9 +1,29 @@
+@use "colors";
+
 footer {
-  width: 100%;
   padding: 2rem 0.8rem;
+  min-width: 1152px;
+  background-color: colors.$footerDark;
 }
 
 .footer-container {
-  min-width: 1152px;
+  display: flex 1;
+  justify-content: space-between;
+  width: 90%;
   margin: 0 auto;
+  color: colors.$midtone;
+
+  .left-pane {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      cursor: pointer;
+      color: colors.$base;
+      font-weight: 200;
+      font-size: 0.6rem;
+      font-style: italic;
+    }
+  }
 }

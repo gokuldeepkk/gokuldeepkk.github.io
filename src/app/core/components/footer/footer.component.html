@@ -1,6 +1,20 @@
 <footer>
   <div class="footer-container">
-    <span class="credit">Website by Gokul Deep K K</span>
-    <div class="media-links"></div>
+    <div class="left-pane">
+      <span class="credit">Website by Gokul Deep K K</span>
+      <a href="https://www.freepik.com/search">Icon by UIcons</a>
+    </div>
+    <div class="right-pane">
+      <div class="media-links">
+        <a
+          *ngFor="let media of mediaLinks"
+          [href]="media.link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg-icon [path]="media.logo"></svg-icon>
+        </a>
+      </div>
+    </div>
   </div>
 </footer>
