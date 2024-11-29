@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SvgComponent } from './svg.component';
+import { MediaLinksComponent } from './media-links.component';
 
-describe('SvgComponent', () => {
-  let component: SvgComponent;
-  let fixture: ComponentFixture<SvgComponent>;
+describe('MediaLinksComponent', () => {
+  let component: MediaLinksComponent;
+  let fixture: ComponentFixture<MediaLinksComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SvgComponent]
+      imports: [MediaLinksComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SvgComponent);
+    fixture = TestBed.createComponent(MediaLinksComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

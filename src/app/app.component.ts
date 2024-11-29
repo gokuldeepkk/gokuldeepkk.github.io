@@ -12,7 +12,6 @@ import { FooterComponent } from './core/components/footer/footer.component';
   imports: [
     RouterOutlet,
     HeroTextComponent,
-    ProfileComponent,
     FooterComponent,
     SkillSetComponent,
     ExperienceComponent,
