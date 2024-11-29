@@ -3,8 +3,6 @@
 .main {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  width: auto;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
 }
@@ -19,4 +17,10 @@
   -webkit-border-radius: 50%;
   position: absolute;
   z-index: 3;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .main {
+    padding: 0 2rem;
+  }
 }

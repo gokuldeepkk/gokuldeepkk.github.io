@@ -1,45 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
-@use 'colors';
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@use "colors";
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 body {
-    margin: 0;
-    padding: 0;
-    background-color: colors.$dark;
+  margin: 0;
+  padding: 0;
+  background-color: colors.$dark;
 }
 
 html {
-    cursor: none;
+  cursor: none;
 }
 
 section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    max-height: 100vh;
-    font-family: "Nunito Sans";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  max-height: 100vh;
+  font-family: "Nunito Sans";
 }
 
 .section-title {
-    color: colors.$base;
-    &::after {
-        content: '';
-        display: block;
-        position: relative;
-        margin: auto;
-        height: 2px;
-        left: 5px;
-        transform: scaleX(0);
-        background-color: transparent;
-        transition: transform 0.25s ease-out;
-    }
+  color: colors.$base;
+  &::after {
+    content: "";
+    display: block;
+    position: relative;
+    margin: auto;
+    height: 2px;
+    left: 5px;
+    transform: scaleX(0);
+    background-color: transparent;
+    transition: transform 0.25s ease-out;
+  }
 
-    &:hover {
-        transform-origin: bottom center;
-        &::after {
-            transform: scaleX(1);
-            background-color: colors.$highlight;
-        }
+  &:hover {
+    transform-origin: bottom center;
+    &::after {
+      transform: scaleX(1);
+      background-color: colors.$highlight;
     }
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  section {
+    max-height: unset;
+    height: unset;
+    min-height: 100vh;
+  }
 }
