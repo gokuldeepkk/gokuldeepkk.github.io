@@ -90,12 +90,46 @@
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 319px) and (max-device-width: 600px) {
   .timeline {
     min-width: unset;
     width: 100%;
+    margin-bottom: 2rem;
   }
   .experience {
-    width: 100%;
+    padding: 2rem 0;
+
+    &:last-of-type {
+      border: none;
+    }
+    .time-period {
+      color: colors.$midtone;
+      font-weight: 600;
+    }
+    .exp-desc {
+      display: flex;
+      background-color: transparent;
+      position: relative;
+      width: 100%;
+      left: unset;
+      color: colors.$base;
+
+      .details {
+        p {
+          text-align: justify;
+        }
+      }
+
+      .skills {
+        background: transparent;
+        padding: 1rem 0;
+
+        .skill {
+          color: colors.$midtone;
+          font-weight: 500;
+          font-size: 1rem;
+        }
+      }
+    }
   }
 }
