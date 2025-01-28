@@ -1,0 +1,9 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.carelon.mobile.dev1",
+      "sha256_cert_fingerprints":
+      ["EA:B9:0D:D6:09:CC:83:FB:E8:A8:B1:C5:66:35:96:72:01:BA:16:FC:D6:C3:A9:BF:54:E5:83:E0:19:94:2A:FE"]
+    }
+  }]
