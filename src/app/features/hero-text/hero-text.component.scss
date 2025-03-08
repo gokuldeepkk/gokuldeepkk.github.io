@@ -17,9 +17,11 @@
   }
 
   .description {
-    font-size: 0.8rem;
-    font-style: oblique;
+    font-size: 0.9rem;
+    text-align: center;
+    letter-spacing: 1px;
     font-family: colors.$secondary-font;
+    margin: 1em 0;
   }
 }
 
@@ -36,7 +38,9 @@
   align-items: center;
   gap: 0.5rem;
   cursor: none;
-  margin: 1rem auto;
+  margin: 2rem auto;
+  width: 40%;
+  justify-content: center;
 
   svg path {
     stroke: colors.$light;
