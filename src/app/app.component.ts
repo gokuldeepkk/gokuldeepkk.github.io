@@ -1,10 +1,11 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeroTextComponent } from '@features/hero-text/hero-text.component';
-import { ProfileComponent } from '@features/profile/profile.component';
 import { SkillSetComponent } from './features/skill-set/skill-set.component';
 import { ExperienceComponent } from '@features/experience/experience.component';
 import { FooterComponent } from './core/components/footer/footer.component';
+// import { LandingSectionComponent } from '@features/landing-section/landing-section.component';
+import { LoadScreenComponent } from '@core/components/load-screen/load-screen.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,8 @@ import { FooterComponent } from './core/components/footer/footer.component';
     SkillSetComponent,
     ExperienceComponent,
     FooterComponent,
+    // LandingSectionComponent,
+    LoadScreenComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
