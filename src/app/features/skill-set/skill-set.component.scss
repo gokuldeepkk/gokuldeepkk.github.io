@@ -3,6 +3,7 @@
 .skill-set {
   min-width: 1152px;
   margin: auto;
+  background-color: colors.$secondary;
 
   .skill-board {
     display: flex;
@@ -29,10 +30,6 @@
 
       h2 {
         color: colors.$midtone;
-      }
-
-      .category-img {
-        width: 50%;
       }
 
       &:first-of-type {
@@ -81,7 +78,7 @@
           color: colors.$highlight;
         }
         .category-img {
-          width: 80%;
+          width: 80% !important;
         }
 
         ul {
